@@ -114,7 +114,7 @@ export const Tags = styled.div`
     cursor: pointer;
   }
   @media (max-width: 768px) {
-    width:20rem;
+    width:18em;
     button{
         width:6rem;
         font-size:0.7rem;
