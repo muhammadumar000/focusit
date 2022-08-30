@@ -19,16 +19,19 @@ const Home = () => {
 
   const workTimeToggle = () => {
     setTime(workTime);
+    setIsActive(false)
     setInitialTime(workTime);
   }
 
   const shortBreakTimeToggle = () => {
     setTime(shortBreakTime);
+    setIsActive(false)
     setInitialTime(shortBreakTime);
   }
 
   const longBreakTimeToggle = () => {
     setTime(longBreakTime);
+    setIsActive(false)
     setInitialTime(longBreakTime);
   }
 
@@ -67,7 +70,7 @@ const Home = () => {
         <h1>Focus Timer</h1>
         <p>Focus on what matters most, do more in less time.</p>
       </Text>
-      <Timer>
+      <Timer initialTime = {initialTime}>
         <Tags initialTime={initialTime}>
           <button className="work" onClick={workTimeToggle}>
             Work
